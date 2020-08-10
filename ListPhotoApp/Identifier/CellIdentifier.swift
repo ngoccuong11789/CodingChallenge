@@ -7,3 +7,14 @@
 //
 
 import Foundation
+
+struct CellIdentifier {
+    static let RegularListPhotosCellIdentifier = "RegularListPhotosCell"
+    static let CompactListPhotosCellIdentifier = "CompactListPhotosCell"
+    static let nibRegularNameCollectionView = "RegularListPhotoCollectionViewCell"
+    static let nibCompactNameCollectionView = "CompactCollectionViewCell"
+}
+
+struct Keys {
+    static let stateSelected = "stateSelected"
+}

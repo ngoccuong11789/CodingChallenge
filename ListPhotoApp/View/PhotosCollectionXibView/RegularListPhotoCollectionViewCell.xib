@@ -10,7 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ListPhotosCell" id="gTV-IL-0wX" customClass="ListPhotoCollectionViewCell" customModule="ListPhotoApp" customModuleProvider="target">
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="RegularListPhotosCell" id="gTV-IL-0wX" customClass="RegularListPhotoCollectionViewCell" customModule="ListPhotoApp" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="189" height="186"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -18,17 +18,17 @@
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="28" translatesAutoresizingMaskIntoConstraints="NO" id="2R6-8T-gvD">
-                        <rect key="frame" x="125" y="58.5" width="64" height="69"/>
+                        <rect key="frame" x="125" y="63" width="64" height="60"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="author" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1GH-if-qXT">
-                                <rect key="frame" x="0.0" y="0.0" width="50" height="20.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <rect key="frame" x="0.0" y="0.0" width="39.5" height="16"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="size" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8gx-zq-Ozb">
-                                <rect key="frame" x="0.0" y="48.5" width="30.5" height="20.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <rect key="frame" x="0.0" y="44" width="24" height="16"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -54,6 +54,7 @@
             <size key="customSize" width="189" height="186"/>
             <connections>
                 <outlet property="author" destination="1GH-if-qXT" id="C19-N8-IfS"/>
+                <outlet property="photo" destination="2v8-Xb-UsF" id="moZ-IY-oVo"/>
                 <outlet property="size" destination="8gx-zq-Ozb" id="2L2-qV-VFF"/>
             </connections>
             <point key="canvasLocation" x="241.30434782608697" y="179.46428571428569"/>
